@@ -1,12 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>My portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	    crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<title>My portfolio</title>
 </head>
+
 <body>
-    
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<h1 class="header__title">Стрюков Андрей</h1>
+				<h2 class="header__descripton">&ltHTML&gt верстка сайтов</h2>
+			</div>
+			<nav class="header__nav">
+				<ul class="header__list">
+					<li class="header__item">
+						<a href="#" class="header__link">Обо мне</a>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__link">Контакты</a>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__link">Краткое резюме</a>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__link">Заказ</a>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__link">Портфолио</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" class="header__link header__link--dowload">Скачать резюме</a>
+		</div>
+	</header>
+	<main>
+		<section class="aboutme container">
+			<h2 class="aboutme__title">Обо мне</h2>
+			<div class="aboutme__wrapper">
+				<h3 class="aboutme__subtitle">Немного о себе</h3>
+				<p class="aboutme__description">
+					После успешного завершения обучения в компьютерной школе Hillel я планирую профессионально заниматься версткой сайтов и разработкой
+					web-приложений, в данный момент основательно изучаю JavaScript на курсе Front-End Pro в компьютерной школе Hillel. В
+					своей работе я стараюсь придерживаться принципов валидной, семантической, адаптивной верстки. По необходимости могу
+					использовать библиотеки типа Bootstrap, но с легкостью обхожусь без них.
+				</p>
+			</div>
+			<ul class="aboutme__skills-list">
+				<h3 class="aboutme__bubtitle">Основные навыки</h3>
+				<li class="aboutme__skill-item">HTML, CSS</li>
+				<!-- <li class="aboutme__skill-item">Flexbox</li> -->
+				<li class="aboutme__skill-item">SCSS</li>
+				<li class="aboutme__skill-item">Основы БЭМ</li>
+				<!-- <li class="aboutme__skill-item">SVG</li> -->
+				<li class="aboutme__skill-item">Адаптивная верстка</li>
+				<li class="aboutme__skill-item">Git для личного использования</li>
+				<li class="aboutme__skill-item">Adobe Photoshop на базовом уровне</li>
+				<li class="aboutme__skill-item">Zeplin, Avocode</li>
+			</ul>
+		</section>
+		<section class="contacts">
+			<div class="container">
+				<h2 class="contacts__title">Контакты</h2>
+				<ul class="contacts__list">
+					<li class="contacts__item">
+						<a href="#" class="contacts__link contacts__link--gmail">
+							<i class="fas fa-envelope"></i>
+						</a>
+					</li>
+					<li class="contacts__item">
+						<a href="#" class="contacts__link contacts__link--linkedin">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</li>
+					<li class="contacts__item">
+						<a href="#" class="contacts__link contacts__link--github">
+							<i class="fab fa-git"></i>
+						</a>
+					</li>
+					<li class="contacts__item">
+						<a href="#" class="contacts__link contacts__link--telegram">
+							<i class="fab fa-telegram-plane"></i>
+						</a>
+					</li>
+					<li class="contacts__item">
+						<a href="#" class="contacts__link contacts__link--fb">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="cv container">
+			<h2 class="cv__title">Краткое резюме</h2>
+			<h3 class="cv__subtitle">Образование</h3>
+			<p class="cv__description">
+				В 2018 году прошел обучение по курсу Front-End Basic в компьютерной школе Hillel и получил
+				<a href="#" class="cv__link">сертификат</a>. В 2006 году окончил Одесский национальный политехнический университет, Институт электромеханики и энергоменеджмента,
+				специальность “Электромеханические системы автоматизации и электропривод”.
+			</p>
+			<h3 class="cv__subtitle">Опыт работы</h3>
+			<p class="cv__description">
+				За плечами опыт проектирования и программирования систем автоматизации на производстве, работа главным энергетиком, а также
+				менеджера по закупкам.
+			</p>
+			<a href="#" class="cv__link cv__link--dowload">Скачать резюме</a>
+		</section>
+		<section class="porfolio"></section>
+		<section class="order">
+			<!-- <h2 class="order__title">Заказ</h2> -->
+		</section>
+	</main>
+	<footer class="footer container">
+		<span class="footer__copy">© 2018 Стрюков Андрей, &ltHTML&gt верстка</span>
+		<a href="#" class="footer__up">up</a>
+		<ul class="footer__list">
+			<li class="footer__item">
+				<a href="#" class="footer__link footer__link--gmail">
+					<i class="fas fa-envelope"></i>
+				</a>
+			</li>
+			<li class="footer__item">
+				<a href="#" class="footer__link footer__link--linkedin">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+			</li>
+			<li class="footer__item">
+				<a href="#" class="footer__link footer__link--github">
+					<i class="fab fa-git"></i>
+				</a>
+			</li>
+			<li class="footer__item">
+				<a href="#" class="footer__link footer__link--telegram">
+					<i class="fab fa-telegram-plane"></i>
+				</a>
+			</li>
+			<li class="footer__item">
+				<a href="#" class="footer__link footer__link--fb">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+			</li>
+		</ul>
+	</footer>
 </body>
+
 </html>

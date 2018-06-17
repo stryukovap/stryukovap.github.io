@@ -6,7 +6,7 @@ body {
 /* line 4, ../scss/style.scss */
 .container {
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 1440px;
 }
 
 /* line 8, ../scss/style.scss */

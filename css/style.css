@@ -32,38 +32,42 @@ body {
   z-index: 1;
 }
 /* line 29, ../scss/style.scss */
+.header__bgcode {
+  position: absolute;
+}
+/* line 32, ../scss/style.scss */
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 60px;
 }
-/* line 34, ../scss/style.scss */
+/* line 37, ../scss/style.scss */
 .header__logo {
   position: relative;
   z-index: 2;
 }
-/* line 38, ../scss/style.scss */
+/* line 41, ../scss/style.scss */
 .header__title {
   margin: 0;
   color: #A6E684;
 }
-/* line 42, ../scss/style.scss */
+/* line 45, ../scss/style.scss */
 .header__description {
   margin: 0;
   margin-top: 15px;
   color: #ffffff;
 }
-/* line 47, ../scss/style.scss */
+/* line 50, ../scss/style.scss */
 .header__list {
   padding: 0;
   margin: 0;
   display: flex;
 }
-/* line 52, ../scss/style.scss */
+/* line 55, ../scss/style.scss */
 .header__item {
   list-style: none;
 }
-/* line 55, ../scss/style.scss */
+/* line 58, ../scss/style.scss */
 .header__link {
   text-decoration: none;
   text-transform: uppercase;
@@ -74,12 +78,12 @@ body {
   padding: 15px 25px;
   border: 1px solid transparent;
 }
-/* line 64, ../scss/style.scss */
+/* line 67, ../scss/style.scss */
 .header__link:hover {
   border-radius: 25px;
   border: 1px solid #ffffff;
 }
-/* line 68, ../scss/style.scss */
+/* line 71, ../scss/style.scss */
 .header__link--dowload {
   display: inline-block;
   margin-top: 415px;
@@ -89,49 +93,49 @@ body {
   color: #000000;
 }
 
-/* line 80, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 .aboutme__title {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 84, ../scss/style.scss */
+/* line 87, ../scss/style.scss */
 .aboutme__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-/* line 89, ../scss/style.scss */
+/* line 92, ../scss/style.scss */
 .aboutme__column {
   width: 50%;
   padding-right: 50px;
   padding-left: 50px;
   text-align: center;
 }
-/* line 95, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
 .aboutme__subtitle {
   display: inline-block;
   padding-bottom: 5px;
   border-bottom: 1px solid #A6E684;
 }
-/* line 100, ../scss/style.scss */
+/* line 103, ../scss/style.scss */
 .aboutme__description {
   text-align: left;
   margin-top: 0;
 }
-/* line 104, ../scss/style.scss */
+/* line 107, ../scss/style.scss */
 .aboutme__skills-list {
   width: 50%;
   margin: 0;
   text-align: center;
 }
-/* line 109, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 .aboutme__skill-item {
   list-style: none;
   padding-left: 50px;
   padding-right: 50px;
   text-align: left;
 }
-/* line 114, ../scss/style.scss */
+/* line 117, ../scss/style.scss */
 .aboutme__skill-item::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -145,7 +149,7 @@ body {
   margin-right: 15px;
 }
 
-/* line 129, ../scss/style.scss */
+/* line 132, ../scss/style.scss */
 .contacts {
   margin-top: 20px;
   background-image: url(../img/contacts.png);
@@ -155,7 +159,7 @@ body {
   color: #ffffff;
   position: relative;
 }
-/* line 137, ../scss/style.scss */
+/* line 140, ../scss/style.scss */
 .contacts::before {
   content: "";
   display: block;
@@ -167,7 +171,7 @@ body {
   height: 100%;
   z-index: 1;
 }
-/* line 148, ../scss/style.scss */
+/* line 151, ../scss/style.scss */
 .contacts__title {
   text-align: center;
   margin: 0;
@@ -175,7 +179,7 @@ body {
   position: relative;
   z-index: 2;
 }
-/* line 155, ../scss/style.scss */
+/* line 158, ../scss/style.scss */
 .contacts__list {
   margin: 0;
   display: flex;
@@ -185,11 +189,11 @@ body {
   z-index: 2;
   margin-top: 100px;
 }
-/* line 164, ../scss/style.scss */
+/* line 167, ../scss/style.scss */
 .contacts__item {
   list-style: none;
 }
-/* line 167, ../scss/style.scss */
+/* line 170, ../scss/style.scss */
 .contacts__link {
   color: #ffffff;
   text-decoration: none;
@@ -200,7 +204,7 @@ body {
   padding-top: 170px;
   padding-bottom: 150px;
 }
-/* line 176, ../scss/style.scss */
+/* line 179, ../scss/style.scss */
 .contacts__link::before {
   content: "";
   display: block;
@@ -212,11 +216,11 @@ body {
   top: 0;
   left: 0;
 }
-/* line 187, ../scss/style.scss */
+/* line 190, ../scss/style.scss */
 .contacts__link:hover {
   color: #5aec0c;
 }
-/* line 191, ../scss/style.scss */
+/* line 194, ../scss/style.scss */
 .contacts__logo {
   display: block;
   width: 146px;
@@ -226,35 +230,35 @@ body {
   font-size: 50px;
 }
 
-/* line 202, ../scss/style.scss */
+/* line 205, ../scss/style.scss */
 .cv__title {
   text-align: center;
 }
-/* line 205, ../scss/style.scss */
+/* line 208, ../scss/style.scss */
 .cv__wrapper {
   display: flex;
   justify-content: space-between;
 }
-/* line 209, ../scss/style.scss */
+/* line 212, ../scss/style.scss */
 .cv__column {
   width: 50%;
   text-align: center;
 }
-/* line 213, ../scss/style.scss */
+/* line 216, ../scss/style.scss */
 .cv__subtitle {
   display: inline-block;
 }
-/* line 216, ../scss/style.scss */
+/* line 219, ../scss/style.scss */
 .cv__description {
   text-align: left;
   padding-right: 50px;
   padding-left: 50px;
 }
-/* line 221, ../scss/style.scss */
+/* line 224, ../scss/style.scss */
 .cv__link {
   color: inherit;
 }
-/* line 223, ../scss/style.scss */
+/* line 226, ../scss/style.scss */
 .cv__link--dowload {
   display: inline-block;
   margin-top: 20px;
@@ -264,34 +268,34 @@ body {
   color: #000000;
 }
 
-/* line 234, ../scss/style.scss */
+/* line 237, ../scss/style.scss */
 .footer {
   background-color: rgba(0, 0, 0, 0.75);
   color: #ffffff;
   margin-top: 30px;
 }
-/* line 238, ../scss/style.scss */
+/* line 241, ../scss/style.scss */
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/* line 243, ../scss/style.scss */
+/* line 246, ../scss/style.scss */
 .footer__list {
   list-style: none;
   display: flex;
 }
-/* line 247, ../scss/style.scss */
+/* line 250, ../scss/style.scss */
 .footer__item {
   margin-left: 20px;
   margin-right: 20px;
 }
-/* line 251, ../scss/style.scss */
+/* line 254, ../scss/style.scss */
 .footer__link {
   color: #ffffff;
   font-size: 30px;
 }
-/* line 254, ../scss/style.scss */
+/* line 257, ../scss/style.scss */
 .footer__link:hover {
   color: #5aec0c;
 }

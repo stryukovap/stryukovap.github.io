@@ -15,6 +15,7 @@ body {
     background-size: cover;
     position: relative;
     min-height: 700px;
+    height: 100vh;
     &::before {
         content: "";
         display: block;

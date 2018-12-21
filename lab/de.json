@@ -1,0 +1,20 @@
+{
+  "error":"Fehler",
+  "text_401_1":"Berechtigungsdaten sind falsch.",
+  "text_401_2":"Überprüfen sie ihr login\\passwort und versuchen sie es erneut.",
+  "text_403_1":"Sie haben keinen zugriff auf diese ressource.",
+  "text_403_2":"Zurückkommen",
+  "text_404_1":"Die angeforderte ressource konnte nicht gefunden werden.",
+  "text_404_2":"Versuchen sie es später erneut",
+  "text_404_3":"Zurück nach hause",
+  "text_408_1":"Server-timeout ist abgelaufen.",
+  "text_408_2":"Versuchen sie die anfrage zu wiederholen.",
+  "text_408_3":"Nachladen",
+  "text_429_1":"Sie haben zu viele anfragen gesendet.",
+  "text_500_1":"Etwas ist schief gelaufen, aber wir arbeiten bereits daran.",
+  "text_500_2":"Bei problemen wenden sie sich an den dienst",
+  "text_500_3":"technischer support per telefon",
+  "update_1":"Technische arbeiten",
+  "update_2":"Die site wird technisch bearbeitet.",
+  "update_3":"Versuchen sie, ihre anfrage später zu wiederholen."
+}

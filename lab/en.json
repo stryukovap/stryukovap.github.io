@@ -1,0 +1,20 @@
+{
+  "error":"Error",
+  "text_401_1":"Authorization data is incorrect.",
+  "text_401_2":"Check your login\\password and try again.",
+  "text_403_1":"You do not have access to this resource.",
+  "text_403_2":"Back",
+  "text_404_1":"The requested resource could not be found.",
+  "text_404_2":"Try again later",
+  "text_404_3":"Go back to the main page",
+  "text_408_1":"Server timeout has expired.",
+  "text_408_2":"Try to repeat the request.",
+  "text_408_3":"Reload",
+  "text_429_1":"You have sent too many requests.",
+  "text_500_1":"Something went wrong, but we are already working on it.",
+  "text_500_2":"If you have any problems, contact the service",
+  "text_500_3":"technical support by phone",
+  "update_1":"Technical works",
+  "update_2":"The site is undergoing technical work.",
+  "update_3":"Try to repeat your request later."
+}

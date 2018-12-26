@@ -127,32 +127,35 @@
         </div>
     </section>
     <section class="main__works works">
-        <div class="works__title">Как работает платформа CONTUBER</div>
-        <div class="works__wrapper">
-            <div class="works__desc">
-                <div class="works__desc-title">Поэтапное отслеживание движения груза</div>
-                <div class="works__desc-text">Водитель приезжает на место (забор контейнера или выгрузка) и отмечается в
-                    приложении: прибыл/убыл. Все действия фиксируются
-                    в вашем Личном кабинет.
+        <div class="container">
+            <div class="works__title">Как работает платформа CONTUBER</div>
+            <div class="works__wrapper">
+                <div class="works__desc">
+                    <div class="works__desc-title">Поэтапное отслеживание движения груза</div>
+                    <div class="works__desc-text">Водитель приезжает на место (забор контейнера или выгрузка) и
+                        отмечается в
+                        приложении: прибыл/убыл. Все действия фиксируются
+                        в вашем Личном кабинет.
+                    </div>
                 </div>
+                <ul class="works__list">
+                    <li class="works__item works__item--1">Создаете заявку в Личном кабинете
+                        и отправляете ее своим водителям
+                        и частным перевозчикам.
+                    </li>
+                    <li class="works__item works__item--2">Водители проходят «живую» регистрацию
+                        в вашей компании и скачивают мобильное
+                        приложение.
+                    </li>
+                    <li class="works__item works__item--3">Водитель получает заказ онлайн с полной
+                        информацией (тип, груз, стоимость, где
+                        забрать контейнер, место доставки и место
+                        сдачи «порожняка»).
+                        Легкое управление: принять заказ, позвонить
+                        контакту, отметить статус отбытия-прибытия.
+                    </li>
+                </ul>
             </div>
-            <ul class="works__list">
-                <li class="works__item">Создаете заявку в Личном кабинете
-                    и отправляете ее своим водителям
-                    и частным перевозчикам.
-                </li>
-                <li class="works__item">Водители проходят «живую» регистрацию
-                    в вашей компании и скачивают мобильное
-                    приложение.
-                </li>
-                <li class="works__item">Водитель получает заказ онлайн с полной
-                    информацией (тип, груз, стоимость, где
-                    забрать контейнер, место доставки и место
-                    сдачи «порожняка»).
-                    Легкое управление: принять заказ, позвонить
-                    контакту, отметить статус отбытия-прибытия.
-                </li>
-            </ul>
         </div>
     </section>
     <section class="main__tariffs tariffs">
@@ -198,21 +201,31 @@
         </ul>
     </section>
     <section class="main__form-access form-access">
-        <div class="form-access__title"></div>
-        <div class="form-access__desc"></div>
-        <form action="#" class="form-access__form">
-            <div class="form-access__title"></div>
-            <label for="name"></label>
-            <input class="form-access__input" id="name" type="text" placeholder="*Имя">
-            <label for="email"></label>
-            <input class="form-access__input" id="email" type="email" placeholder="*E-mail">
-            <label for="politics">Политика конфиденциальности</label>
-            <input id="politics" type="checkbox">
-            <a href="#" class="form-access__button">Получить  доступ к платформе</a>
-        </form>
-        <div class="form-access__contacts">
-            <a href="tel:+79992092560" class="form-access__link">+7 (999) 209-25-60</a>
-            <a href="mailto:info@contuber.ru" class="form-access__link">info@contuber.ru</a>
+        <div class="container">
+            <div class="form-access__wrapper">
+                <div class="form-access__title">Облегчаем решение Ваших ежедневных задач по логистике</div>
+                <div class="form-access__desc">Попробуйте все возможности CONTUBER</div>
+                <form action="#" class="form-access__form">
+                    <div class="form-access__form-wrapper">
+                        <div class="form-access__title-inner">Оставьте контакты для регистрации на платформе.</div>
+                        <div class="form-access__form-wrapper-inner">
+                            <!--<label for="name"></label>-->
+                            <input class="form-access__input" id="name" type="text" placeholder="*Имя" required>
+                            <!--<label for="email"></label>-->
+                            <input class="form-access__input" id="email" type="email" placeholder="*E-mail" required>
+                        </div>
+                        <div class="form-access__politics">
+                            <input id="politics" type="checkbox">
+                            <label for="politics">Политика конфиденциальности</label>
+                        </div>
+                        <a href="#" class="form-access__button">Получить доступ к платформе</a>
+                    </div>
+                </form>
+                <div class="form-access__contacts">
+                    <a href="tel:+79992092560" class="form-access__link form-access__link--tel">+7 (999) 209-25-60</a>
+                    <a href="mailto:info@contuber.ru" class="form-access__link form-access__link--email">info@contuber.ru</a>
+                </div>
+            </div>
         </div>
     </section>
 </main>

@@ -4,12 +4,10 @@
 /*}*/
 
 .container {
-    /*font-family: "Proxima Nova", sans-serif;*/
     box-sizing: border-box;
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-    outline: 1px solid red;
 
 }
 

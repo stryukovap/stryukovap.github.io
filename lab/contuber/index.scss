@@ -13,7 +13,7 @@ $black_color: #000000;
   display: block;
   position: absolute;
   top: -20px;
-  left: 100px;
+  left: 58px;
   color: $main_color;
   font-size: 85px;
   font-weight: 300;
@@ -26,7 +26,6 @@ body {
   font-family: 'Proxima Nova', sans-serif;
 }
 .container{
-  outline: 1px solid red;
   margin:0 auto;
   box-sizing: border-box;
   max-width: 1200px;
@@ -123,6 +122,7 @@ body {
     font-weight: 400;
   }
   &__list{
+    //font-family: "Proxima Nova - Regular", serif;
     @include reset_list;
     margin-top: 24px;
     font-size: 20px;
@@ -237,7 +237,7 @@ body {
   &__works{
     background-color: #3e3b44;
     color: $white_color;
-    padding: 70px 0 0;
+    padding: 63px 0 0;
     overflow: hidden;
   }
   &__form-access{
@@ -329,13 +329,13 @@ body {
     border-radius: 5px 25px;
     border: 5px solid $main_color;
     position: relative;
-    padding: 154px 19px 29px 20px;
-    width: 50%;
+    padding: 142px 11px 20px 20px;
+    width: 61%;
     &:before{
       content: '';
       display: block;
       position: absolute;
-      bottom: 175px;
+      bottom: 149px;
       margin-left:-190px;
       background-image: url("./img/MacBook_Air.png");
       width: 819px;
@@ -346,7 +346,7 @@ body {
       font-size: 24px;
     }
     &-text{
-      margin-top: 25px;
+      margin-top: 16px;
       font-size: 18px;
     }
   }
@@ -354,7 +354,7 @@ body {
     width: 50%;
     margin: 47px 0 0 16px;
     list-style: none;
-    padding-top: 30px;
+    padding-top: 23px;
     padding-bottom: 129px;
     border-radius: 30px 0 0;
     background-color: #302d35;
@@ -373,8 +373,8 @@ body {
     }
   }
   &__item {
-    padding-left: 150px;
-    margin-top: 50px;
+    padding-left: 106px;
+    margin-top: 43px;
     position: relative;
     &:first-child {
       margin-top: 0;
@@ -401,7 +401,7 @@ body {
       background-image: url("./img/pc.svg");
       background-repeat: no-repeat;
       top: 0;
-      left: 0;
+      left: -10px;
     }
     &--2:after{
       content: '';
@@ -413,7 +413,7 @@ body {
       background-image: url("./img/app.svg");
       background-repeat: no-repeat;
       top: 0;
-      left: 0;
+      left: -8px;
     }
     &--3:after{
       content: '';
@@ -425,10 +425,214 @@ body {
       background-image: url("./img/app_hand.svg");
       background-repeat: no-repeat;
       top: 0;
-      left: 0;
+      left: -8px;
     }
   }
 }
+
+/*for include*/
+
+/*tariffs*/
+
+.main__tariffs {
+  padding: 60px 0 65px;
+  background-color: #FFF;
+}
+
+.tariffs {
+  text-align: center;
+
+  &__title {
+    color: #000000;
+    font-size: 33px;
+    font-weight: 400;
+  }
+
+  &__list {
+    @include reset_list;
+    margin-top: 49px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: 1089px) {
+      flex-direction: column;
+
+    }
+
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    box-sizing: border-box;
+
+    //@media (min-width: 320px) and (max-width: 499px){
+    //  width: 100%;
+    //  margin: 0 auto 40px;
+    //}
+    //
+    //@media (min-width: 500px) and (max-width: 1019px) {
+    //  width: 400px;
+    //  margin: 0 auto 40px;
+    //}
+    //
+    //@media (min-width: 1020px) {
+    //  width: 31.7%;
+    //  margin-bottom: 0;
+    //  margin-left: unset;
+    //  margin-right: unset;
+    //}
+  }
+
+  &__item-title {
+    border-radius: 5px 25px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 13px 0;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main_color;
+    background-color: #e3eaee;
+
+  }
+
+  &__price {
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: 400;
+    color: $black_color;
+
+  }
+
+  &__desc {
+    margin-top: 25px;
+    margin-bottom: 28px;
+    padding: 0 17px;
+    font-size: 18px;
+    font-weight: 400;
+    color: $black_color;
+
+  }
+
+  &__button {
+    margin-top: auto;
+    border-radius: 5px 25px;
+    display: block;
+    background-color: $main_color;
+    color: $white_color;
+    text-decoration: none;
+    width: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 13px 0;
+    text-align: center;
+    //margin: 16px 0;
+  }
+}
+
+/*Access*/
+
+.main__access {
+  padding: 70px 0 102px;
+  background-color: #e3eaee;
+}
+
+.access {
+
+  &__title {
+    color: #000000;
+    text-align: center;
+    font-size: 33px;
+    font-weight: 400;
+  }
+
+  &__list {
+    @include reset_list;
+    margin-top: 67px;
+    display: flex;
+    flex-direction: row;
+
+
+  }
+
+  &__item {
+    flex-shrink: 0;
+    position: relative;
+    list-style: none;
+    height: 241px;
+    box-sizing: border-box;
+    color: $white_color;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+
+
+
+  }
+
+  &__item:nth-child(1) {
+    width: 310px;
+    z-index: 4;
+    padding: 17px 36px 0 25px;
+    background-image: url(img/access-1.png);
+    background-size: 310px 241px;
+
+  }
+
+  &__item:nth-child(2) {
+    width: 310px;
+    z-index: 3;
+    left: -17px;
+    padding: 67px 102px 0 29px;
+    background-image: url(img/access-2.png);
+    background-size: 310px 241px;
+
+  }
+
+  &__item:nth-child(3) {
+    width: 310px;
+    z-index: 2;
+    left: -34px;
+    padding: 120px 88px 0 29px;
+    background-image: url(img/access-3.png);
+    height: 241px;
+    background-size: 310px 241px;
+
+  }
+
+  &__item:nth-child(4) {
+    width: 293px;
+    z-index: 1;
+    left: -53px;
+    padding: 173px 32px 0 24px;
+    background-image: url(img/access-4.png);
+    background-size: 293px 241px;
+
+  }
+
+  li.access__item {
+    @media (min-width:1151px) and (max-width:1200px) {
+      width: 25% !important;
+      padding: 88px 20px 10px;
+      left: 0;
+      height: 241px;
+      background-size: 100% 100%;
+    }
+
+    @media (max-width: 1150px) {
+      width: 50%;
+
+    }
+  }
+
+
+}
+
+/*4 start*/
 .form-access{
   &__wrapper{
     display: flex;
@@ -528,4 +732,19 @@ body {
       background-image: url("./img/mail2.svg");
     }
   }
+}
+
+/* 4 end*/
+
+.footer {
+  background-color: #302d35;
+
+  &__copy {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    color: #e3eaee;
+    text-align: center;
+    font-size: 16px;
+  }
+
 }

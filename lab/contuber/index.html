@@ -108,7 +108,7 @@
                 <div class="banner__desc-top">Попробуйте все возможности CONTUBER</div>
                 <a href="#" class="banner__button banner__button--white">Оставьте Ваши контакты</a>
                 <div class="banner__desc-bottom">и получите дополнительную информацию от нашего специалиста</div>
-        </div>
+            </div>
         </div>
     </div>
     <section class="main__logistic">
@@ -220,7 +220,7 @@
                         </div>
                         <div class="form-access__politics">
                             <input id="politics" type="checkbox">
-                            <label for="politics">Политика конфиденциальности</label>
+                            <label for="politics" class="politic-trigger">Политика конфиденциальности</label>
                         </div>
                         <button type="submit" class="form-access__button">Получить доступ к платформе</button>
                     </div>
@@ -238,6 +238,45 @@
     </div>
 </footer>
 
+<div class="popup popup__politics">
+    <div class="popup__inner">
+        <button class="popup__politics-close" type="button" title="Закрыть">Закрыть</button>
+        <div class="popup__edit popup__politics-edit">
+            <div class="popup__politics-title">Политика конфиденциальности</div>
+            <p class="popup__politics-text">
+                Действуя в своей волей и в своем интересе при размещении своих персональных данных на интернет-сайте
+                https://test.ru Вы, далее — Клиент, подтверждаете свое согласие на обработку персональных данных.
+                Оператор персональных данных, которому вы даете согласие на их обработку: ООО «Contuber», далее —
+                Оператор.
+                Оператор собирает персональные данные с целью информирования Клиента об оказываемых услугах, для
+                проведения
+                опросов, анкетирования, рекламных и маркетинговых исследований, в том числе и путем осуществления прямых
+                контактов по данным, которые Клиент указал на интернет-сайте Оператора.
+                Персональные данные хранятся на серверах находящихся на территории РФ.
+                Перечень персональных данных, которые могут приниматься к обработке на сайте: фамилия, имя, отчество,
+                адрес
+                электронной почты, номер телефона
+                Настоящее согласие Клиента предоставляет Оператору право на осуществление любых действий в отношении
+                моих
+                персональных данных, которые необходимы и желаемы для достижения вышеуказанных целей, включая, без
+                ограничения, сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение),
+                использование,
+                передачу, обезличивание, блокирование и уничтожение персональных данных, под которыми понимаются все
+                данные,
+                указанные мной на настоящем сайте.
+                Обработка персональных данных Клиента осуществляется Оператором любым способом, как с использованием
+                средств
+                автоматизации, включая программное обеспечение, так и без использования средств автоматизации — с
+                использованием различных материальных носителей, включая бумажные носители.
+                Настоящее согласие на обработку персональных данных действует 10 лет или до отзыва Клиентом.
+                Для отзыва согласия на обработку персональных данных вам достаточно написать письмо на электронную почту
+                info@test.ru
+            </p>
+        </div>
+    </div>
+</div>
+
+
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script src="js/slick.js" type="text/javascript"></script>
 <script>
@@ -251,6 +290,35 @@
         });
 
     });
+
+</script>
+
+<script>
+
+    const link = document.querySelector(".politic-trigger");
+    const popup = document.querySelector(".modal-content");
+    const close = popup.querySelector(".modal-content-close");
+
+    link.addEventListener("click", function (event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+
+    });
+
+    close.addEventListener("click", function (event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+    });
+
+
+    window.addEventListener("keydown", function (event) {
+        if (event.keyCode === 27) {
+            if (popup.classList.contains("modal-content-show")) {
+                popup.classList.remove("modal-content-show");
+            }
+        }
+    });
+
 
 </script>
 

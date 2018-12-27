@@ -859,8 +859,8 @@ body {
 .popup__inner {
   border-radius: 5px 25px;
   background-color: #e3eaee;
-  padding: 20px;
-  top: 50px;
+  padding: 0 20px 20px;
+  top: 30px;
 }
 
 .popup__politics-close {
@@ -899,6 +899,9 @@ body {
 .popup__politics-text {
   margin-top: 14px;
   margin-bottom: 14px;
+}
+.popup__politics-edit {
+  padding-top: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

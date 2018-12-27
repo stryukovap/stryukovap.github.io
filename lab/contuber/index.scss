@@ -698,6 +698,9 @@ body {
 
 /*4 start*/
 .form-access{
+  &__button{
+    font-family: 'Proxima Nova Rg', sans-serif;
+  }
   &__wrapper{
     display: flex;
     align-items: center;

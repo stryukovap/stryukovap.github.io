@@ -670,6 +670,9 @@ body {
 }
 
 /*4 start*/
+.form-access__button {
+  font-family: "Proxima Nova Rg", sans-serif;
+}
 .form-access__wrapper {
   display: flex;
   align-items: center;

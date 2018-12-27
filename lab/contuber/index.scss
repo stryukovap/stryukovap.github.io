@@ -863,6 +863,10 @@ body {
   top: 30px;
 }
 .popup__politics{
+  display: none;
+  &--show{
+    display: flex;
+  }
   &-close {
     position: absolute;
     top: 15px;

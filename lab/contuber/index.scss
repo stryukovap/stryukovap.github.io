@@ -4,6 +4,9 @@ $white_color: #ffffff;
 $black_color: #000000;
 
 @import "./fonts/stylesheet.css";
+@import "./css/slick-theme.css";
+@import "./css/slick.css";
+@import "./css/slider.css";
 
 @mixin reset_list {
   margin: 0;

@@ -1,4 +1,7 @@
 @import "./fonts/stylesheet.css";
+@import "./css/slick-theme.css";
+@import "./css/slick.css";
+@import "./css/slider.css";
 .uppercase {
   text-transform: uppercase;
 }

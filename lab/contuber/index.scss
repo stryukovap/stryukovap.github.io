@@ -230,7 +230,7 @@ body {
       margin-left: 2px;
       height: 21px;
       width: 3px;
-      background-image: url(img/dot.png);
+      background-image: url(./img/dot.png);
       background-size: 1px 9px;
       background-repeat: repeat-y;
     }
@@ -649,7 +649,7 @@ body {
     width: 310px;
     z-index: 4;
     padding: 17px 36px 0 25px;
-    background-image: url(img/access-1.png);
+    background-image: url(./img/access-1.png);
     background-size: 310px 241px;
 
   }
@@ -659,7 +659,7 @@ body {
     z-index: 3;
     left: -18px;
     padding: 67px 102px 0 29px;
-    background-image: url(img/access-2.png);
+    background-image: url(./img/access-2.png);
     background-size: 310px 241px;
 
   }
@@ -669,7 +669,7 @@ body {
     z-index: 2;
     left: -36px;
     padding: 120px 88px 0 29px;
-    background-image: url(img/access-3.png);
+    background-image: url(./img/access-3.png);
     height: 241px;
     background-size: 310px 241px;
 
@@ -680,7 +680,7 @@ body {
     z-index: 1;
     left: -56px;
     padding: 173px 32px 0 24px;
-    background-image: url(img/access-4.png);
+    background-image: url(./img/access-4.png);
     background-size: 293px 241px;
 
     @media (max-width:950px) {

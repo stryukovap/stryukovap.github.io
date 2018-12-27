@@ -468,22 +468,22 @@ body {
     list-style: none;
     box-sizing: border-box;
 
-    //@media (min-width: 320px) and (max-width: 499px){
-    //  width: 100%;
-    //  margin: 0 auto 40px;
-    //}
-    //
-    //@media (min-width: 500px) and (max-width: 1019px) {
-    //  width: 400px;
-    //  margin: 0 auto 40px;
-    //}
-    //
-    //@media (min-width: 1020px) {
-    //  width: 31.7%;
-    //  margin-bottom: 0;
-    //  margin-left: unset;
-    //  margin-right: unset;
-    //}
+    @media (min-width: 320px) and (max-width: 499px){
+      width: 100%;
+      margin: 0 auto 40px;
+    }
+
+    @media (min-width: 500px) and (max-width: 1019px) {
+      width: 400px;
+      margin: 0 auto 40px;
+    }
+
+    @media (min-width: 1020px) {
+      width: 31.7%;
+      margin-bottom: 0;
+      margin-left: unset;
+      margin-right: unset;
+    }
   }
 
   &__item-title {

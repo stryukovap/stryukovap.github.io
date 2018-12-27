@@ -3,10 +3,10 @@ $blue_color: #203f9a;
 $white_color: #ffffff;
 $black_color: #000000;
 
-@import "./fonts/stylesheet.css";
-@import "./css/slick-theme.css";
-@import "./css/slick.css";
-@import "./css/slider.css";
+@import "fonts/stylesheet";
+@import "css/slick-theme";
+@import "css/slick";
+@import "css/slider";
 
 @mixin reset_list {
   margin: 0;
@@ -612,9 +612,19 @@ body {
     display: flex;
     flex-direction: row;
 
-    @media (max-width: 950px) {
-      flex-direction: column;
+    @media (max-width: 1199px) {
+      width: 620px;
+      margin-left: auto;
+      margin-right: auto;
+      flex-wrap: wrap;
     }
+
+    @media (max-width: 720px) {
+      width: 310px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
 
 
   }
@@ -647,7 +657,7 @@ body {
   &__item:nth-child(2) {
     width: 310px;
     z-index: 3;
-    left: -17px;
+    left: -18px;
     padding: 67px 102px 0 29px;
     background-image: url(img/access-2.png);
     background-size: 310px 241px;
@@ -657,7 +667,7 @@ body {
   &__item:nth-child(3) {
     width: 310px;
     z-index: 2;
-    left: -34px;
+    left: -36px;
     padding: 120px 88px 0 29px;
     background-image: url(img/access-3.png);
     height: 241px;
@@ -668,35 +678,23 @@ body {
   &__item:nth-child(4) {
     width: 293px;
     z-index: 1;
-    left: -53px;
+    left: -56px;
     padding: 173px 32px 0 24px;
     background-image: url(img/access-4.png);
     background-size: 293px 241px;
 
+    @media (max-width:950px) {
+      left: 0;
+    }
   }
 
   li.access__item {
-    @media (min-width:1151px) and (max-width:1200px) {
-      width: 25% !important;
-      padding: 88px 20px 10px;
+    @media (max-width:1199px) {
       left: 0;
-      height: 241px;
-      background-size: 100% 100%;
-    }
+      margin-top: 17px;
 
-    @media (max-width: 1150px) {
-      width: 50%;
-
-    }
-
-    @media (max-width:950px) {
-      width: 95%;
-      left: 0;
-      margin: 0 auto;
     }
   }
-
-
 }
 
 /*4 start*/

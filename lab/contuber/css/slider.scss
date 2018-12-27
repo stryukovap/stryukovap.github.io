@@ -65,27 +65,27 @@
     border: 1px solid #961a37;
     border-radius: 74px;
     flex-shrink: 0;
-    background: #fff url(../img/slider-item__icon1.png) no-repeat center center;
+    background: #fff url(./img/slider-item__icon1.png) no-repeat center center;
 }
 
 .slider-item--1 .slider-item__wrap::before {
-    background: #fff url(../img/slider-item__icon1.png) no-repeat center center;
+    background: #fff url(./img/slider-item__icon1.png) no-repeat center center;
 }
 
 .slider-item--2 .slider-item__wrap::before {
-    background: #fff url(../img/slider-item__icon2.png) no-repeat center center;
+    background: #fff url(./img/slider-item__icon2.png) no-repeat center center;
 }
 
 .slider-item--3 .slider-item__wrap::before {
-    background: #fff url(../img/slider-item__icon3.png) no-repeat center center;
+    background: #fff url(./img/slider-item__icon3.png) no-repeat center center;
 }
 
 .slider-item--4 .slider-item__wrap::before {
-    background: #fff url(../img/slider-item__icon4.png) no-repeat center center;
+    background: #fff url(./img/slider-item__icon4.png) no-repeat center center;
 }
 
 .slider-item--5 .slider-item__wrap::before {
-    background: #fff url(../img/slider-item__icon5.png) no-repeat center center;
+    background: #fff url(./img/slider-item__icon5.png) no-repeat center center;
 }
 
 .slider-item__text {
@@ -96,10 +96,7 @@
     padding-bottom: 32px;
     font-size: 20px;
 }
-.slider-item__text{
-    text-align: center;
-    padding: 0 20px 0;
-}
+
 .slider-item__text::before {
     content: "";
     display: block;
@@ -109,7 +106,7 @@
     left: 0;
     width: 12px;
     height: 95px;
-    background: transparent url(../img/slider-decor.png) no-repeat center center;
+    background: transparent url(./img/slider-decor.png) no-repeat center center;
 }
 
 /*SSlick-lider*/
@@ -158,7 +155,7 @@
     width: 15px;
     height: 26px;
     display: block;
-    background: transparent url(../img/arrow.png) no-repeat center center;
+    background: transparent url(./img/arrow.png) no-repeat center center;
 }
 
 .slick-prev:before {
@@ -170,7 +167,7 @@
 .slick-dots {
     text-align: right;
     bottom: -46px;
-    right: -33px;
+    right: -24px;
 }
 
 /*outer*/
@@ -215,6 +212,11 @@
     .slick-dots {
         text-align: center;
         right: auto;
+    }
+
+    .slider-item__text{
+        text-align: center;
+        padding: 42px 20px 0;
     }
 
     .slider-item__wrap {

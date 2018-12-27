@@ -215,6 +215,19 @@ body {
       background-repeat: no-repeat;
       background-position: 25px 16px;
     }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -22px;
+      left: 50%;
+      margin-left: 2px;
+      height: 21px;
+      width: 3px;
+      background-image: url(img/dot.png);
+      background-size: 1px 9px;
+      background-repeat: repeat-y;
+    }
     &-title{
       font-size: 33px;
       padding-top: 70px;
@@ -322,6 +335,11 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    flex-direction: column;
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
   &__desc{
     font-weight: 400;
@@ -331,6 +349,17 @@ body {
     position: relative;
     padding: 142px 11px 20px 20px;
     width: 61%;
+
+    @media (max-width: 1199px) {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 600px) {
+      margin-top: 60px;
+    }
+
+
     &:before{
       content: '';
       display: block;
@@ -338,9 +367,23 @@ body {
       bottom: 149px;
       margin-left:-190px;
       background-image: url("./img/MacBook_Air.png");
+      background-repeat: no-repeat;
       width: 819px;
       height: 304px;
       z-index: 5;
+
+      @media (max-width:1199px) {
+        width: 98%;
+        height: 100%;
+        background-size: contain;
+        margin-left: 0;
+        top: -50%;
+      }
+
+      @media (max-width:600px) {
+        top: -48px;
+      }
+
     }
     &-title{
       font-size: 24px;
@@ -362,6 +405,13 @@ body {
     font-weight: 400;
     color:$white_color;
     position: relative;
+
+    @media (max-width: 1199px) {
+      width: 100%;
+      box-sizing: border-box;
+      padding-right: 5px;
+    }
+
     &:before{
       content: '';
       display: block;
@@ -555,6 +605,10 @@ body {
     margin-top: 67px;
     display: flex;
     flex-direction: row;
+    
+    @media (max-width: 950px) {
+      flex-direction: column;
+    }
 
 
   }
@@ -569,6 +623,7 @@ body {
     text-align: left;
     font-size: 20px;
     font-weight: 400;
+    background-repeat: no-repeat;
 
 
 
@@ -627,6 +682,12 @@ body {
       width: 50%;
 
     }
+
+    @media (max-width:950px) {
+      width: 95%;
+      left: 0;
+      margin: 0 auto;
+    }
   }
 
 
@@ -642,15 +703,18 @@ body {
   &__title{
     font-size: 33px;
     font-weight: 400;
+    text-align: center;
     &-inner{
       font-size: 20px;
       font-weight: 400;
+      text-align: center;
     }
   }
   &__desc{
     font-size: 24px;
     font-weight: 400;
     margin-top: 22px;
+    text-align: center;
   }
   &__form{
     display: flex;
@@ -664,8 +728,18 @@ body {
       display: flex;
       align-items: center;
       flex-direction: column;
+
+      @media (max-width: 768px) {
+        //padding: 10px;
+      }
       &-inner{
         margin-top: 20px;
+
+        @media (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
       }
     }
   }
@@ -681,6 +755,12 @@ body {
     width: 342px;
     padding-left: 16px;
     color: $black_color;
+
+    @media (max-width: 400px) {
+      width: 100%;
+      box-sizing: border-box;
+
+    }
     &::placeholder{
       font-size: 16px;
       font-weight: 400;
@@ -688,6 +768,10 @@ body {
     }
     &:last-child{
       margin-right: 0;
+
+      @media (max-width: 768px) {
+        margin-top: 15px;
+      }
     }
   }
   &__politics{
@@ -706,11 +790,22 @@ body {
     font-size: 20px;
     font-weight: 400;
     margin-top: 16px;
+    border: none;
+
+    @media (max-width: 400px) {
+      width: 100%;
+      box-sizing: border-box;
+    }
   }
   &__contacts{
     display: flex;
     align-items: center;
     margin-top: 17px;
+    
+    @media (max-width: 768px) {
+      flex-direction: column;
+      
+    }
   }
   &__link{
     text-decoration: none;
@@ -722,6 +817,11 @@ body {
     background-repeat: no-repeat;
     background-size: 70px 70px;
     background-position: top center;
+
+    @media (max-width: 768px) {
+      margin-right: 0;
+      margin-top: 15px;
+    }
     &:last-child{
       margin-right: 0;
     }
@@ -740,8 +840,7 @@ body {
   background-color: #302d35;
 
   &__copy {
-    padding-top: 30px;
-    padding-bottom: 25px;
+    padding: 30px 15px 25px;
     color: #e3eaee;
     text-align: center;
     font-size: 16px;

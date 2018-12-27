@@ -198,6 +198,19 @@ body {
   background-repeat: no-repeat;
   background-position: 25px 16px;
 }
+.main__promo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  margin-left: 2px;
+  height: 21px;
+  width: 3px;
+  background-image: url(img/dot.png);
+  background-size: 1px 9px;
+  background-repeat: repeat-y;
+}
 .main__promo-title {
   font-size: 33px;
   padding-top: 70px;
@@ -301,6 +314,12 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .works__wrapper {
+    flex-direction: row;
+  }
 }
 .works__desc {
   font-weight: 400;
@@ -311,6 +330,17 @@ body {
   padding: 142px 11px 20px 20px;
   width: 61%;
 }
+@media (max-width: 1199px) {
+  .works__desc {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 600px) {
+  .works__desc {
+    margin-top: 60px;
+  }
+}
 .works__desc:before {
   content: "";
   display: block;
@@ -318,9 +348,24 @@ body {
   bottom: 149px;
   margin-left: -190px;
   background-image: url("./img/MacBook_Air.png");
+  background-repeat: no-repeat;
   width: 819px;
   height: 304px;
   z-index: 5;
+}
+@media (max-width: 1199px) {
+  .works__desc:before {
+    width: 98%;
+    height: 100%;
+    background-size: contain;
+    margin-left: 0;
+    top: -50%;
+  }
+}
+@media (max-width: 600px) {
+  .works__desc:before {
+    top: -48px;
+  }
 }
 .works__desc-title {
   font-size: 24px;
@@ -341,6 +386,13 @@ body {
   font-weight: 400;
   color: #ffffff;
   position: relative;
+}
+@media (max-width: 1199px) {
+  .works__list {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 5px;
+  }
 }
 .works__list:before {
   content: "";
@@ -545,6 +597,11 @@ body {
 .access__list li {
   padding: 0;
 }
+@media (max-width: 950px) {
+  .access__list {
+    flex-direction: column;
+  }
+}
 .access__item {
   flex-shrink: 0;
   position: relative;
@@ -555,6 +612,7 @@ body {
   text-align: left;
   font-size: 20px;
   font-weight: 400;
+  background-repeat: no-repeat;
 }
 .access__item:nth-child(1) {
   width: 310px;
@@ -602,6 +660,13 @@ body {
     width: 50%;
   }
 }
+@media (max-width: 950px) {
+  .access li.access__item {
+    width: 95%;
+    left: 0;
+    margin: 0 auto;
+  }
+}
 
 /*4 start*/
 .form-access__wrapper {
@@ -612,15 +677,18 @@ body {
 .form-access__title {
   font-size: 33px;
   font-weight: 400;
+  text-align: center;
 }
 .form-access__title-inner {
   font-size: 20px;
   font-weight: 400;
+  text-align: center;
 }
 .form-access__desc {
   font-size: 24px;
   font-weight: 400;
   margin-top: 22px;
+  text-align: center;
 }
 .form-access__form {
   display: flex;
@@ -639,6 +707,13 @@ body {
 .form-access__form-wrapper-inner {
   margin-top: 20px;
 }
+@media (max-width: 768px) {
+  .form-access__form-wrapper-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .form-access__input {
   border-radius: 5px 25px;
   background-color: #e3eaee;
@@ -652,6 +727,12 @@ body {
   padding-left: 16px;
   color: #000000;
 }
+@media (max-width: 400px) {
+  .form-access__input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
 .form-access__input::placeholder {
   font-size: 16px;
   font-weight: 400;
@@ -659,6 +740,11 @@ body {
 }
 .form-access__input:last-child {
   margin-right: 0;
+}
+@media (max-width: 768px) {
+  .form-access__input:last-child {
+    margin-top: 15px;
+  }
 }
 .form-access__politics {
   font-size: 16px;
@@ -676,11 +762,23 @@ body {
   font-size: 20px;
   font-weight: 400;
   margin-top: 16px;
+  border: none;
+}
+@media (max-width: 400px) {
+  .form-access__button {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 .form-access__contacts {
   display: flex;
   align-items: center;
   margin-top: 17px;
+}
+@media (max-width: 768px) {
+  .form-access__contacts {
+    flex-direction: column;
+  }
 }
 .form-access__link {
   text-decoration: none;
@@ -692,6 +790,12 @@ body {
   background-repeat: no-repeat;
   background-size: 70px 70px;
   background-position: top center;
+}
+@media (max-width: 768px) {
+  .form-access__link {
+    margin-right: 0;
+    margin-top: 15px;
+  }
 }
 .form-access__link:last-child {
   margin-right: 0;
@@ -708,8 +812,7 @@ body {
   background-color: #302d35;
 }
 .footer__copy {
-  padding-top: 30px;
-  padding-bottom: 25px;
+  padding: 30px 15px 25px;
   color: #e3eaee;
   text-align: center;
   font-size: 16px;

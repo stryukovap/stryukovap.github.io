@@ -201,6 +201,10 @@
 }
 
 @media (max-width: 768px) {
+
+    .slider {
+        width: 94%;
+    }
     .slick-list {
         margin-left: 15px;
     }
@@ -208,5 +212,29 @@
     .slick-dots {
         text-align: center;
         right: auto;
+    }
+
+    .slider-item__wrap {
+        position: relative;
+        box-sizing: border-box;
+        /* max-width: 640px; */
+        min-height: 150px;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .slider-item__wrap::before {
+        position: static;
+    }
+
+    .slider-item__text::before {
+        transform: rotate(-90deg);
+        top: -28px;
+        left: 50%;
+        margin-left: -5px;
+
     }
 }

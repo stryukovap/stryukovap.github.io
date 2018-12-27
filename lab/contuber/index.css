@@ -839,6 +839,7 @@ body {
 }
 .popup__inner {
   position: relative;
+  top: 15px;
   display: flex;
   align-items: center;
   max-width: 800px;

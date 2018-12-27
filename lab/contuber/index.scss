@@ -2,6 +2,9 @@ $main_color: #961a37;
 $blue_color: #203f9a;
 $white_color: #ffffff;
 $black_color: #000000;
+
+@import "./fonts/stylesheet.css";
+
 @mixin reset_list {
   margin: 0;
   padding: 0;
@@ -23,7 +26,7 @@ $black_color: #000000;
 }
 body {
   margin: 0;
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: 'Proxima Nova Rg', sans-serif;
 }
 .container{
   margin:0 auto;

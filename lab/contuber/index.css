@@ -1,10 +1,11 @@
+@import "./fonts/stylesheet.css";
 .uppercase {
   text-transform: uppercase;
 }
 
 body {
   margin: 0;
-  font-family: "Proxima Nova", sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
 }
 
 .container {

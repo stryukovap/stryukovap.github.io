@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "DINProBlack";
+  src: url("../fonts/DINPro-Black.eot");
+  src: url("../fonts/DINPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Black.woff2") format("woff2"), url("../fonts/DINPro-Black.woff") format("woff"), url("../fonts/DINPro-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DINPro";
+  src: url("../fonts/DINPro.eot");
+  src: url("../fonts/DINPro.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro.woff2") format("woff2"), url("../fonts/DINPro.woff") format("woff"), url("../fonts/DINPro.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  font-family: "DINProBlack", sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1170px;
+  padding: 0 15px;
+}
+
+.main {
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+}
+.main__title {
+  font-size: 72px;
+  font-weight: 900;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+.main__title--green {
+  margin: 0;
+  color: #9ac223;
+  position: relative;
+}
+.main__title--green:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -150%;
+  left: -5%;
+  width: 112%;
+  height: 200%;
+  background-image: url(../img/border.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.main__wrapper-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.side {
+  font-weight: 900;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.side--right {
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+.side--left {
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+.side__title {
+  font-size: 36px;
+  margin-top: 100px;
+  padding-top: 73px;
+  position: relative;
+}
+.side__title--left {
+  margin-right: 112px;
+}
+.side__title--left:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/map.svg");
+  background-repeat: no-repeat;
+  background-size: 47px 47px;
+  width: 47px;
+  height: 47px;
+  top: 0;
+  right: 0;
+}
+.side__title--right {
+  margin-left: 112px;
+}
+.side__title--right:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/map.svg");
+  background-repeat: no-repeat;
+  background-size: 47px 47px;
+  width: 47px;
+  height: 47px;
+  top: 0;
+  left: 0;
+  transform: scale(-1, 1);
+}
+.side__desc {
+  font-size: 20px;
+  margin: 25px 0 0;
+  position: relative;
+}
+.side__desc:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background-color: #ffffff;
+  top: 50%;
+  margin-top: -1px;
+}
+.side__desc--left {
+  padding-right: 230px;
+}
+.side__desc--left:before {
+  right: 113px;
+}
+.side__desc--right {
+  padding-left: 230px;
+}
+.side__desc--right:before {
+  left: 113px;
+}
+.side__wrapper {
+  margin-top: 73px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.side__wrapper--left {
+  margin-right: 67px;
+  justify-content: flex-end;
+}
+.side__wrapper--right {
+  margin-left: 67px;
+  justify-content: flex-start;
+}
+.side__link {
+  border-radius: 23px;
+  background-color: #9ac223;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 17px 30px;
+  margin-right: 37px;
+  text-decoration: none;
+  font-family: "DINPro", sans-serif;
+}
+.side__link:last-child {
+  margin-right: 0;
+}
+.side__link--ghost {
+  padding: 17px 44px;
+  background-color: transparent;
+  border: 1px solid #9ac223;
+  color: #9ac223;
+}
+@media (max-width: 1130px) {
+  .side__link {
+    margin: 0;
+    width: 80%;
+  }
+  .side__link--ghost {
+    padding: 17px 30px;
+  }
+  .side__link:last-child {
+    margin: 30px 0 0;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

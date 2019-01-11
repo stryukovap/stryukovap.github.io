@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #d3d3d3;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  border: 0;
+}
+
+.header {
+  &__nav {
+    margin-top: 55px;
+  }
+  &__title{
+    color: #000000;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 117px;
+  }
+  &__desc{
+    color: #333333;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 38px;
+    padding-left: 28px;
+    border-left: 2px solid #252525;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &--one{
+      margin-top: 60px;
+    }
+    &--two{
+      margin-top: 52px;
+    }
+  }
+
+  &__item {
+    padding: 0;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    &--one{
+      margin-right: 156px;
+      padding-top: 81px;
+      text-align: center;
+      position: relative;
+      &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 57px;
+        height: 57px;
+        background-color: #4481eb;
+        //background-image: linear-gradient(to top, #4481eb 0%, #4481eb 100%);
+        border-radius: 50%;
+        left: 50%;
+        top: 0;
+        margin-left: -28.5px;
+      }
+      &:nth-child(1):before{
+        background-image:url("../img/icons8-1.png");
+        background-repeat:no-repeat;
+        background-position: 15px 11px;
+      }
+      &:nth-child(2){
+        margin-right: 131px;
+        &:before{
+          background-image:url("../img/icons8-2.png");
+          background-repeat:no-repeat;
+          background-position:center center;
+        }
+      }
+      &:last-child{
+        margin-right: 0;
+        &:before{
+          background-image:url("../img/icons8-3.png");
+          background-repeat:no-repeat;
+          background-position:center center;
+        }
+      }
+    }
+    &--two{
+      padding: 35px 30px 0 30px;
+      position: relative;
+      z-index: 2;
+      &:before{
+        position:absolute;
+        display:block;
+        left:0px;
+        top: -18px;
+        width: 69px;
+        height: 52px;
+        color: #ffffff;
+        font-size: 72px;
+        font-weight: 700;
+        z-index:-1;
+      }
+      &:nth-child(1):before{
+        content:"01";
+      }
+      &:nth-child(2):before{
+        content:"02";
+        margin-left: 30px;
+      }
+      &:nth-child(3):before{
+        content:"03";
+        margin-left: 30px;
+      }
+      &:nth-child(4):before{
+        content:"04";
+        margin-left: 30px;
+      }
+      &:after{
+        content:"";
+        position:absolute;
+        display:block;
+        bottom: 3px;
+        right: 0;
+        width: 2px;
+        height: 12px;
+        background-color: #252525;
+      }
+      &:first-child{
+        padding-left: 0;
+      }
+      &:last-child{
+        padding-right: 0;
+      }
+      &:last-child:after{
+        display: none;
+      }
+    }
+  }
+}
+
+.nav {
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    padding: 0;
+  }
+
+  &__logo {
+    margin-right: 65px;
+  }
+
+  &__social {
+    margin-right: 25px;
+    color: #252525;
+    font-size: 19px;
+
+    &:last-child {
+      margin-right: 83px;
+    }
+
+    &:hover {
+      color: #4481eb;
+    }
+  }
+
+  &__btn {
+    background-color: #4481eb;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 49px;
+    margin-right: 83px;
+
+    &:hover {
+      background-color: #99c0ff;
+    }
+  }
+
+  &__link {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 50px;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+

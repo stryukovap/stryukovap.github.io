@@ -27,7 +27,7 @@ body {
 .header__desc {
   color: #333333;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 38px;
   padding-left: 28px;
   border-left: 2px solid #252525;
@@ -175,7 +175,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  padding: 15px 49px;
+  padding: 11px 49px;
   margin-right: 83px;
 }
 .nav__btn:hover {
@@ -192,6 +192,92 @@ body {
 .nav__link:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.price__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.price__item {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  padding: 15px;
+}
+.price__item:nth-child(1) {
+  background-image: url("../img/bg-price-1.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  overflow: hidden;
+}
+.price__item-wrapper {
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  padding-left: 135px;
+}
+.price__item-wrapper--one {
+  background-image: url("../img/Price-1.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  overflow: hidden;
+}
+.price__item-title {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-top: 11px;
+  position: relative;
+}
+.price__item-title:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background-color: #252525;
+  bottom: 0;
+  left: 4px;
+}
+.price__item-desc {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.price__item-list {
+  list-style: none;
+  padding: 0;
+  margin: 58px 0 0 0;
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+}
+.price__item-list-item {
+  margin-top: 15px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 19px;
+}
+.price__item-list-item:first-child {
+  margin-top: 0;
+}
+.price__item-list-item--check {
+  background-image: url("../img/check-sign-green.svg");
+  background-position: left 6px;
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+}
+.price__item-list-item--no-check {
+  color: #cccccc;
 }
 
 /*# sourceMappingURL=index.css.map */

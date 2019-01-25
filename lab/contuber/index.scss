@@ -701,6 +701,9 @@ body {
 .form-access{
   &__button{
     font-family: 'Proxima Nova Rg', sans-serif;
+    &:hover{
+      cursor: pointer;
+    }
   }
   &__wrapper{
     display: flex;

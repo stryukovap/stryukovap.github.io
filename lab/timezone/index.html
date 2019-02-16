@@ -19,7 +19,10 @@
     // location=39.6034810,-119.6822510&timestamp=1331161200&key=
     const instance = axios.create({
         headers:{
-            'Access-Control-Allow-Origin':'*'
+            'Access-Control-Allow-Origin':'*',
+      "Access-Control-Allow-Credentials": "true",
+      "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
+      "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
         }
     })
     

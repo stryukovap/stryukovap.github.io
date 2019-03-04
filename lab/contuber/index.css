@@ -561,6 +561,7 @@ body {
 
 .no-webp .header {
   background: url("./img/back_screen_1.jpg") no-repeat center center;
+  background-size: cover;
 }
 .no-webp .main__logistic {
   background: url("./img/user.png") no-repeat top right;
@@ -587,6 +588,7 @@ body {
 
 .webp .header {
   background: url("./img/back_screen_1.webp") no-repeat center center;
+  background-size: cover;
 }
 .webp .main__logistic {
   background: url("./img/user.webp") no-repeat top right;
@@ -612,7 +614,6 @@ body {
 }
 
 .header {
-  background-size: cover;
   color: #ffffff;
 }
 .header__wrapper {

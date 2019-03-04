@@ -559,15 +559,61 @@ body {
   padding: 0 15px;
 }
 
+.no-webp .header {
+  background: url("./img/back_screen_1.jpg") no-repeat center center;
+}
+.no-webp .main__logistic {
+  background: url("./img/user.png") no-repeat top right;
+}
+.no-webp .main__form-access {
+  background: url("./img/back_screen_2.jpg") no-repeat center center;
+  background-size: cover;
+}
+.no-webp .works__desc:before {
+  background-image: url("./img/MacBook_Air.png");
+}
+.no-webp .access__item:nth-child(1) {
+  background-image: url("./img/access-1.png");
+}
+.no-webp .access__item:nth-child(2) {
+  background-image: url("./img/access-2.png");
+}
+.no-webp .access__item:nth-child(3) {
+  background-image: url("./img/access-3.png");
+}
+.no-webp .access__item:nth-child(4) {
+  background-image: url("./img/access-4.png");
+}
+
+.webp .header {
+  background: url("./img/back_screen_1.webp") no-repeat center center;
+}
+.webp .main__logistic {
+  background: url("./img/user.webp") no-repeat top right;
+}
+.webp .main__form-access {
+  background: url("./img/back_screen_2.webp") no-repeat center center;
+  background-size: cover;
+}
+.webp .works__desc:before {
+  background-image: url("./img/MacBook_Air.webp");
+}
+.webp .access__item:nth-child(1) {
+  background-image: url("./img/access-1.webp");
+}
+.webp .access__item:nth-child(2) {
+  background-image: url("./img/access-2.webp");
+}
+.webp .access__item:nth-child(3) {
+  background-image: url("./img/access-3.webp");
+}
+.webp .access__item:nth-child(4) {
+  background-image: url("./img/access-4.webp");
+}
+
 .header {
   background-size: cover;
   color: #ffffff;
-}
-.header .no-webp {
-  background: url("./img/back_screen_1.jpg") no-repeat center center;
-}
-.header .webp {
-  background: url("./img/back_screen_1.webp") no-repeat center center;
 }
 .header__wrapper {
   display: flex;
@@ -776,7 +822,6 @@ body {
 }
 .main__logistic {
   padding: 60px 0 50px;
-  background: image("./img/user.webp", "./img/user.png") no-repeat top right;
   background-size: contain;
 }
 .main__works {
@@ -786,8 +831,6 @@ body {
   overflow: hidden;
 }
 .main__form-access {
-  background: image("./img/back_screen_2.webp", "./img/back_screen_2.jpg") no-repeat center center;
-  background-size: cover;
   padding: 67px 0 32px;
   color: #ffffff;
 }
@@ -897,7 +940,6 @@ body {
   position: absolute;
   bottom: 149px;
   margin-left: -190px;
-  background-image: image("./img/MacBook_Air.webp", "./img/MacBook_Air.png");
   background-repeat: no-repeat;
   width: 819px;
   height: 304px;
@@ -1178,7 +1220,6 @@ body {
   width: 310px;
   z-index: 4;
   padding: 17px 36px 0 25px;
-  background-image: image("./img/access-1.webp", "./img/access-1.png");
   background-size: 310px 241px;
 }
 .access__item:nth-child(2) {
@@ -1186,7 +1227,6 @@ body {
   z-index: 3;
   left: -18px;
   padding: 67px 102px 0 29px;
-  background-image: image("./img/access-2.webp", "./img/access-2.png");
   background-size: 310px 241px;
 }
 .access__item:nth-child(3) {
@@ -1194,7 +1234,6 @@ body {
   z-index: 2;
   left: -36px;
   padding: 120px 88px 0 29px;
-  background-image: image("./img/access-3.webp", "./img/access-3.png");
   height: 241px;
   background-size: 310px 241px;
 }
@@ -1203,7 +1242,6 @@ body {
   z-index: 1;
   left: -56px;
   padding: 173px 32px 0 24px;
-  background-image: image("./img/access-4.webp", "./img/access-4.png");
   background-size: 293px 241px;
 }
 @media (max-width: 950px) {

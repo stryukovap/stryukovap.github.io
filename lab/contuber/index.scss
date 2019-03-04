@@ -45,9 +45,17 @@ body {
 .header {
   //height: 100vh;
   //width: 100%;
-  background: image("./img/back_screen_1.webp", "./img/back_screen_1.jpg") no-repeat center center;
+  //background: url("./img/back_screen_1.webp", "./img/back_screen_1.jpg") no-repeat center center;
   background-size: cover;
   color: $white_color;
+
+  & .no-webp {
+    background: url("./img/back_screen_1.jpg") no-repeat center center;
+  }
+
+  & .webp {
+    background: url("./img/back_screen_1.webp") no-repeat center center;
+  }
 
   &__wrapper {
     display: flex;
@@ -275,7 +283,7 @@ body {
 
   &__logistic {
     padding: 60px 0 50px;
-    background: image("./img/user.webp","./img/user.png") no-repeat top right;
+    background: image("./img/user.webp", "./img/user.png") no-repeat top right;
     background-size: contain;
   }
 

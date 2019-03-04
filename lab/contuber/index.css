@@ -560,9 +560,14 @@ body {
 }
 
 .header {
-  background: image("./img/back_screen_1.webp", "./img/back_screen_1.jpg") no-repeat center center;
   background-size: cover;
   color: #ffffff;
+}
+.header .no-webp {
+  background: url("./img/back_screen_1.jpg") no-repeat center center;
+}
+.header .webp {
+  background: url("./img/back_screen_1.webp") no-repeat center center;
 }
 .header__wrapper {
   display: flex;

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html amp lang="ru" class="no-js">
+
+<head>
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<meta charset="UTF-8">
+	<link rel="canonical" href="/index.html">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<style amp-custom>
+		/* The content from base.css */
+		body {
+			margin: 0;
+			font-family: 'Roboto', sans-serif;
+			background-color: #979797;
+		}
+
+		.container {
+			margin: 0 auto;
+			max-width: 1440px;
+		}
+
+		.header {
+			/*background-image: url(./img/header.png);*/
+			/*background-repeat: no-repeat;*/
+			/*background-size: cover;*/
+			position: relative;
+			/*min-height: 700px;*/
+			/*height: 100vh;*/
+		}
+
+		.header::before {
+			content: "";
+			display: block;
+			position: absolute;
+			background-color: rgba(0, 0, 0, 0.75);
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+		}
+
+		.header__bgcode {
+			position: absolute;
+		}
+
+		.header__wrapper {
+			/*display: -webkit-box;*/
+			/*display: -ms-flexbox;*/
+			/*display: flex;*/
+			/*-webkit-box-pack: justify;*/
+			/*-ms-flex-pack: justify;*/
+			/*justify-content: space-between;*/
+			padding-top: 60px;
+		}
+
+		.header__logo {
+			position: relative;
+			z-index: 2;
+		}
+
+		.header__title {
+			margin: 0;
+			color: #A6E684;
+		}
+
+		.header__description {
+			margin: 0;
+			margin-top: 15px;
+			color: #ffffff;
+		}
+
+		.header__list {
+			padding: 0;
+			padding-top: 60px;
+			margin: 0;
+			/*display: -webkit-box;*/
+			/*display: -ms-flexbox;*/
+			/*display: flex;*/
+		}
+
+		.header__item {
+			list-style: none;
+		}
+
+		.header__link {
+			text-decoration: none;
+			text-transform: uppercase;
+			margin-right: 50px;
+			color: #ffffff;
+			position: relative;
+			z-index: 2;
+			padding: 15px 25px;
+			border: 1px solid transparent;
+		}
+
+		.header__link:hover {
+			border-radius: 25px;
+			border: 1px solid #ffffff;
+		}
+
+		.header__link--dowload {
+			display: inline-block;
+			margin-top: 415px;
+			background-color: #A6E684;
+			padding: 8px 30px;
+			border-radius: 30px;
+			color: #000000;
+		}
+
+		.aboutme__title {
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		.aboutme__wrapper {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: start;
+			-ms-flex-align: start;
+			align-items: flex-start;
+			flex-direction: column;
+		}
+
+		.aboutme__column {
+			width: 50%;
+			padding-right: 50px;
+			padding-left: 50px;
+			text-align: center;
+		}
+
+		.aboutme__subtitle {
+			display: inline-block;
+			padding-bottom: 5px;
+			border-bottom: 1px solid #A6E684;
+		}
+
+		.aboutme__description {
+			text-align: left;
+			margin-top: 0;
+		}
+
+		.aboutme__skills-list {
+			width: 50%;
+			margin: 0;
+			text-align: center;
+		}
+
+		.aboutme__skill-item {
+			list-style: none;
+			padding-left: 50px;
+			padding-right: 50px;
+			text-align: left;
+		}
+
+		.aboutme__skill-item::before {
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			color: #A6E684;
+			content: "\f078";
+			margin-right: 15px;
+		}
+
+		.contacts {
+			margin-top: 20px;
+			/*background-image: url(./img/contacts.png);*/
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			color: #ffffff;
+			position: relative;
+		}
+
+		.contacts::before {
+			content: "";
+			display: block;
+			position: absolute;
+			background-color: rgba(0, 0, 0, 0.75);
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+		}
+
+		.contacts__title {
+			text-align: center;
+			margin: 0;
+			padding-top: 50px;
+			position: relative;
+			z-index: 2;
+		}
+
+		.contacts__list {
+			margin: 0;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-pack: distribute;
+			justify-content: space-around;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			position: relative;
+			z-index: 2;
+			margin-top: 100px;
+			flex-direction: column;
+		}
+
+		.contacts__item {
+			list-style: none;
+		}
+
+		.contacts__link {
+			color: #ffffff;
+			text-decoration: none;
+			display: block;
+			text-align: center;
+			width: 146px;
+			position: relative;
+			padding-top: 170px;
+			padding-bottom: 150px;
+		}
+
+		.contacts__link::before {
+			content: "";
+			display: block;
+			width: 136px;
+			height: 136px;
+			border: 5px solid #A6E684;
+			border-radius: 50%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.contacts__link:hover {
+			color: #5aec0c;
+		}
+
+		.contacts__logo {
+			display: block;
+			width: 146px;
+			position: absolute;
+			top: 48px;
+			left: 0;
+			font-size: 50px;
+		}
+
+		.cv__title {
+			text-align: center;
+		}
+
+		.cv__wrapper {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			flex-direction: column;
+		}
+
+		.cv__column {
+			width: 50%;
+			text-align: center;
+		}
+
+		.cv__subtitle {
+			display: inline-block;
+		}
+
+		.cv__description {
+			text-align: left;
+			padding-right: 50px;
+			padding-left: 50px;
+		}
+
+		.cv__link {
+			color: inherit;
+		}
+
+		.cv__link--dowload {
+			display: inline-block;
+			margin-top: 20px;
+			background-color: #A6E684;
+			padding: 8px 30px;
+			border-radius: 30px;
+			color: #000000;
+		}
+
+		.footer {
+			background-color: rgba(0, 0, 0, 0.75);
+			color: #ffffff;
+			margin-top: 30px;
+		}
+
+		.footer__wrapper {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.footer__list {
+			list-style: none;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+		.footer__item {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		.footer__link {
+			color: #ffffff;
+			font-size: 30px;
+		}
+
+		.footer__link:hover {
+			color: #5aec0c;
+		}
+		/*# sourceMappingURL=style.css.map */
+	</style>
+	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<!--<link rel="stylesheet" href="css/style.css">-->
+	<title>My portfolio</title>
+	<!-- Google Tag Manager -->
+	<!--<script>-->
+		<!--(function (w, d, s, l, i) {-->
+			<!--w[l] = w[l] || [];-->
+			<!--w[l].push({-->
+				<!--'gtm.start': new Date().getTime(),-->
+				<!--event: 'gtm.js'-->
+			<!--});-->
+			<!--var f = d.getElementsByTagName(s)[0],-->
+				<!--j = d.createElement(s),-->
+				<!--dl = l != 'dataLayer' ? '&l=' + l : '';-->
+			<!--j.async = true;-->
+			<!--j.src =-->
+				<!--'https://www.googletagmanager.com/gtm.js?id=' + i + dl;-->
+			<!--f.parentNode.insertBefore(j, f);-->
+		<!--})(window, document, 'script', 'dataLayer', 'GTM-NDJJQDK');-->
+	<!--</script>-->
+	<!-- End Google Tag Manager -->
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDJJQDK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
+	<!-- End Google Tag Manager (noscript) -->
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<div class="header__logo">
+					<h1 class="header__title">Стрюков Андрей</h1>
+					<h2 class="header__description">Front-End developer</h2>
+				</div>
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="#aboutme" class="header__link">Обо мне</a>
+						</li>
+						<li class="header__item">
+							<a href="#contacts" class="header__link">Контакты</a>
+						</li>
+						<li class="header__item">
+							<a href="#cv" class="header__link">Краткое резюме</a>
+						</li>
+						<!-- <li class="header__item">
+							<a href="#" class="header__link">Заказ</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Портфолио</a>
+						</li> -->
+					</ul>
+				</nav>
+			</div>
+			<a href="https://drive.google.com/open?id=17NzU27R1afoNbzQDsR4ufE6FYfu2cZpT" class="header__link header__link--dowload">Посмотреть
+				резюме</a>
+		</div>
+		<div class="header__bgcode">
+		</div>
+	</header>
+	<main>
+		<section class="aboutme container">
+			<h2 id="aboutme" class="aboutme__title">Обо мне</h2>
+			<div class="aboutme__wrapper">
+				<div class="aboutme__column">
+					<h3 class="aboutme__subtitle">Немного о себе</h3>
+					<p class="aboutme__description">
+						После успешного завершения обучения курса Front-End Basic + Pro в компьютерной школе Hillel занимаюсь
+						версткой сайтов и разработкой web-приложений.
+					</p>
+					<p class="aboutme__description">
+						В своей работе я стараюсь придерживаться принципов валидной, семантической, адаптивной верстки. По необходимости
+						могу использовать
+						библиотеки типа Bootstrap, но с легкостью обхожусь без них.
+					</p>
+				</div>
+				<ul class="aboutme__skills-list">
+					<h3 class="aboutme__subtitle">Основные навыки</h3>
+					<li class="aboutme__skill-item">HTML, CSS</li>
+					<li class="aboutme__skill-item">SCSS</li>
+					<li class="aboutme__skill-item">Основы БЭМ</li>
+					<li class="aboutme__skill-item">Адаптивная верстка</li>
+					<li class="aboutme__skill-item">Git для личного использования</li>
+					<li class="aboutme__skill-item">Adobe Photoshop на базовом уровне</li>
+					<li class="aboutme__skill-item">Zeplin, Avocode</li>
+					<li class="aboutme__skill-item">Wordpress</li>
+					<li class="aboutme__skill-item">JavaScript</li>
+					<li class="aboutme__skill-item">Vue JS</li>
+				</ul>
+			</div>
+		</section>
+		<section class="contacts">
+			<div class="container">
+				<h2 id="contacts" class="contacts__title">Контакты</h2>
+				<ul class="contacts__list">
+					<li class="contacts__item">
+						<a href="mailto:stryukovap@gmail.com" class="contacts__link contacts__link--gmail">
+							<i class="fas fa-envelope contacts__logo"></i>
+							Gmail
+						</a>
+					</li>
+					<li class="contacts__item">
+						<a href="https://www.linkedin.com/in/stryukovap/"
+						 class="contacts__link contacts__link--linkedin">
+							<i class="fab fa-linkedin-in contacts__logo"></i>
+							Linkedin
+						</a>
+					</li>
+					<li class="contacts__item">
+						<a href="https://github.com/stryukovap" class="contacts__link contacts__link--github">
+							<i class="fab fa-git contacts__logo"></i>
+							Github
+						</a>
+					</li>
+					<li class="contacts__item">
+						<a href="https://t.me/stryukovap" class="contacts__link contacts__link--telegram">
+							<i class="fab fa-telegram-plane contacts__logo"></i>
+							Telegram
+						</a>
+					</li>
+					<li class="contacts__item">
+						<a href="https://www.facebook.com/stryukovap" class="contacts__link contacts__link--fb">
+							<i class="fab fa-facebook-f contacts__logo"></i>
+							Facebook
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="cv container">
+			<h2 id="cv" class="cv__title">Краткое резюме</h2>
+			<div class="cv__wrapper">
+				<div class="cv__column">
+					<h3 class="cv__subtitle">Образование</h3>
+					<p class="cv__description">
+						В 2018 году прошел обучение по курсу Front-End Pro в компьютерной школе Hillel и получил
+						<a href="https://drive.google.com/open?id=1DOvZqJNNAWy54C04Exj_Y5xhsPICqBEW" class="cv__link">сертификат.</a>
+					</p>
+					<p class="cv__description">
+						В 2018 году прошел обучение по курсу Front-End Basic в компьютерной школе Hillel и получил
+						<a href="https://drive.google.com/open?id=1Z1wKsrs3TvrR43ZKT2dFiUdwxqwGkPpi" class="cv__link">сертификат.</a>
+					</p>
+					<p class="cv__description">
+						В 2006 году окончил Одесский национальный политехнический университет, Институт электромеханики и
+						энергоменеджмента, специальность
+						“Электромеханические системы автоматизации и электропривод”.
+					</p>
+				</div>
+				<div class="cv__column">
+					<h3 class="cv__subtitle">Опыт работы</h3>
+					<p class="cv__description">
+						За плечами опыт проектирования и программирования систем автоматизации на производстве, работа главным
+						энергетиком, а также
+						менеджера по закупкам.
+					</p>
+					<a href="https://drive.google.com/open?id=17NzU27R1afoNbzQDsR4ufE6FYfu2cZpT" class="cv__link cv__link--dowload">Посмотреть
+						резюме</a>
+				</div>
+			</div>
+		</section>
+		<!-- <section class="portfolio"></section> -->
+		<!-- <section class="order"></section> -->
+	</main>
+	<footer class="footer">
+		<div class="footer__wrapper container">
+			<span class="footer__copy">© 2019 Стрюков Андрей, &ltHTML&gt верстка</span>
+			<a href="#" class="footer__link footer__link--up">
+				<i class="fas fa-angle-double-up"></i>
+			</a>
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a href="mailto:stryukovap@gmail.com" class="footer__link footer__link--gmail">
+						<i class="fas fa-envelope"></i>
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="https://www.linkedin.com/in/stryukovap/"
+					 class="footer__link footer__link--linkedin">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="https://github.com/stryukovap" class="footer__link footer__link--github">
+						<i class="fab fa-git"></i>
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="https://t.me/stryukovap" class="footer__link footer__link--telegram">
+						<i class="fab fa-telegram-plane"></i>
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="https://www.facebook.com/stryukovap" class="footer__link footer__link--fb">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</li>
+				<li class="footer__item">
+					<a href="lab/dist/index.html" class="footer__link">
+						<i class="fas fa-vial"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+
+</html>

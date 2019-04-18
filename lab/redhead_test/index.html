@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>RedHead test</title>
+</head>
+<body>
+<section class="promo">
+    <div class="promo__wrapper">
+        <div class="promo__desc">
+            <p>Топор скидок выкопан! Последние дни Черной пятницы в Антошка уже начались. Хватит отсиживаться
+                в вигвамах - пора действовать.</p>
+            <p>Выходите на тропу выгодных покупок 24, 25 и 25 ноября. Все 3 дня Вас ждут скидки до 70%
+                во всех категориях товаров. Если Вы давно ждали подходящего момента для покупки игрушек, одежды,
+                детского питания, да чего угодно - это он!</p>
+            <p>Приходите в магазины Антошка! Покажите, кто в племени вождь. ;) И поспешите, потому что кличество
+                акционных товаров ограничено!</p>
+            <p><a href="https://antoshka.ua/bf2017" class="promo__link">https://antoshka.ua/bf2017</a></p>
+        </div>
+        <div class="promo__form">
+            <form class="promo__reg">
+                <input name="name" type="text" placeholder="Имя, Фамилия, Отчество">
+                <input name="tel" type="tel" placeholder="Телефон">
+                <input name="email" type="email" placeholder="Email">
+                <input name="promoCode" type="text" placeholder="Промокод">
+                <input type="button" value="Зарегистрироваться" onclick="validateForm(this.form)">
+                <div class="promo__err" id="errBlock">1111</div>
+            </form>
+        </div>
+    </div>
+    <div class="promo__text">
+        <p><strong>18.06.2018</strong> с помощью <strong>random.org</strong> мы определим
+            <strong>пять победителей</strong>, которые получат путевки. Результаты будут
+            опубликованы на этой странице и в публикации розыграша на нашей странице в Facebook</p>
+        <p>С каждым победителем свяжется по телефону менеджер для согласования передачи приза.</p>
+    </div>
+</section>
+<script src="assets/js/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+<div class="loader">
+    <div id="loader"></div>
+</div>
+</body>
+</html>

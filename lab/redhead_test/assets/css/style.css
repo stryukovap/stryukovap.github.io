@@ -1,0 +1,116 @@
+/* ***** */
+* {
+  outline: 1px solid red;
+}
+
+body {
+  margin: 0;
+}
+
+.promo {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+}
+.promo__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.promo__desc, .promo__form {
+  width: 50%;
+}
+@media (max-width: 760px) {
+  .promo__desc, .promo__form {
+    width: 100%;
+  }
+}
+.promo__reg {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 15px;
+}
+.promo__reg input {
+  margin: 15px 0 0;
+  text-indent: 10px;
+  padding: 15px 20px 15px 20px;
+  border: 1px solid #333333;
+  border-radius: 20px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+}
+.promo__reg input:first-child {
+  margin: 0;
+}
+.promo__reg input::placeholder {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+}
+.promo__reg input[type=button] {
+  border: none;
+  border-radius: 20px;
+  background-color: #f04137;
+  margin: 15px 0 0;
+  padding: 15px 20px 15px 20px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+}
+.promo__reg input[type=button]:hover {
+  background-color: #f0142d;
+  cursor: pointer;
+}
+.promo__reg input, .promo__reg button {
+  width: 100%;
+  box-sizing: border-box;
+}
+.promo__err {
+  margin-top: 15px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  color: #f0142d;
+  width: 100%;
+  display: none;
+}
+.promo__text {
+  padding: 15px;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 99999;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #f04137;
+  animation: spin 2s linear infinite;
+  border-bottom: 16px solid #f04137;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

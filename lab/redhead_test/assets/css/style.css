@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  background-color: #333333;
 }
 
 .promo {
@@ -53,7 +54,7 @@ body {
   border: none;
   border-radius: 20px;
   background-color: #f04137;
-  margin: 15px 0 0;
+  margin: 40px 0 0;
   padding: 15px 20px 15px 20px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
@@ -62,7 +63,7 @@ body {
   background-color: #f0142d;
   cursor: pointer;
 }
-.promo__reg input, .promo__reg button {
+.promo__reg input {
   width: 100%;
   box-sizing: border-box;
 }

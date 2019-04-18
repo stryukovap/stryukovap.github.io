@@ -1,6 +1,6 @@
 function postForm(promoCode) {
     // alert(promoCode);
-    axios.post('https://sw.ants.co.ua/demo/', {
+    axios.post('http://sw.ants.co.ua/demo/', {
         couponcode: '0087-0220302018',
     })
         .then(function (response) {

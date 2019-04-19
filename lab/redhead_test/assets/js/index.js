@@ -1,10 +1,30 @@
 function postForm(promoCode) {
-    // alert(promoCode);
+    const popupAJAX = document.getElementById('blockForAJAX');
     axios.post('http://sw.ants.co.ua/demo/', {
-        couponcode: '0087-0220302018',
+        headers: {'Access-Control-Allow-Origin': '*'},
+        couponcode: promoCode,
+        command: 'checkCouponCode'
     })
         .then(function (response) {
             console.log(response);
+            if (response.data.exist === 1) {
+                axios.post('http://sw.ants.co.ua/demo/', {
+                    headers: {'Access-Control-Allow-Origin': '*'},
+                    couponcode: promoCode,
+                    command: 'activate'
+                })
+                    .then(function (response) {
+                        console.log(response);
+                        popupAJAX.innerHTML = 'Регистрации промокода успешна';
+                        popupAJAX.style.display = 'flex';
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    })
+            } else {
+                popupAJAX.innerHTML = 'Ошибка регистрации промокода';
+                popupAJAX.style.display = 'flex';
+            }
         })
         .catch(function (error) {
             console.log(error);
@@ -12,7 +32,7 @@ function postForm(promoCode) {
 }
 
 function validateForm(form) {
-    const errBlock = document.getElementById('errBlock');
+    const errBlock = document.getElementById('errBlockForForm');
     errBlock.style.display = 'none';
     if (form.email.value.indexOf('@') === -1) {
         errBlock.style.display = 'block';
@@ -27,4 +47,8 @@ function validateForm(form) {
     if (errBlock.style.display !== 'block') {
         postForm(form.promoCode.value);
     }
+}
+function closePopup() {
+    const popupAJAX = document.getElementById('blockForAJAX');
+    popupAJAX.style.display = 'none'
 }

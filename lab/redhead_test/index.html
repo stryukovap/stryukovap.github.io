@@ -29,7 +29,7 @@
                 <input name="email" type="email" placeholder="Email">
                 <input name="promoCode" type="text" placeholder="Промокод">
                 <label id="btnLabel" for="btn"><input type="button" id="btn" value="Зарегистрироваться" onclick="validateForm(this.form)"></label>
-                <div class="promo__err" id="errBlock">Error Block</div>
+                <div class="promo__err" id="errBlockForForm">Error Block For Form</div>
             </form>
         </div>
     </div>
@@ -44,6 +44,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
 <div class="loader">
     <div id="loader"></div>
+</div>
+<div id="blockForAJAX" class="blockForAJAX">
+    <p class="blockForAJAX__msg">
+        Сообщения пользователю
+    </p>
+    <button class="blockForAJAX__btn" onclick="closePopup()">Ок</button>
 </div>
 </body>
 </html>

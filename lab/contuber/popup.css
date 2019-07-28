@@ -10,25 +10,22 @@
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 50;
   overflow: hidden;
-  transition: 0.64s ease-in-out;
-}
-.popup__inner {
-  position: relative;
-  display: flex;
-  align-items: center;
-  max-width: 800px;
-  max-height: 600px;
-  width: 80%;
-  height: 80%;
-  background-color: #fff;
-  transition: 0.64s ease-in-out;
-  overflow-y: auto;
-}
-.popup__edit {
-  flex-direction: column;
-  justify-content: center;
-  height: 90%;
-  padding: 1rem;
-}
+  transition: 0.64s ease-in-out; }
+  .popup__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    max-height: 600px;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    transition: 0.64s ease-in-out;
+    overflow-y: auto; }
+  .popup__edit {
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    padding: 1rem; }
 
 /*# sourceMappingURL=popup.css.map */
